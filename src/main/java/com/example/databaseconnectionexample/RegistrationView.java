@@ -20,5 +20,6 @@ public class RegistrationView {
     private void setRegButton() throws SQLException {
         dbConnection db=new dbConnection();
         db.insertData("INSERT INTO customer (customerID, name, contact, email, balance, regDate, password) VALUES ('"+customerID.getText()+"','"+name.getText()+"','"+contact.getText()+"','random','"+balance.getText()+"','"+datePicker.getValue()+"','11111')");
+
     }
 }
