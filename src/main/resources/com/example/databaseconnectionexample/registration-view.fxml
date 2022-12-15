@@ -3,18 +3,18 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane prefHeight="400.0" vgap="20" hgap="30" prefWidth="330.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseconnectionexample.RegistrationView">
+<GridPane  prefHeight="400.0" vgap="20" hgap="30" alignment="BASELINE_CENTER" prefWidth="330.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseconnectionexample.RegistrationView" >
     <Label text="Customer ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <TextField fx:id="customerID" GridPane.columnIndex="1" GridPane.rowIndex="0" />
     <Label text="Full name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <TextField fx:id="name" GridPane.columnIndex="1" GridPane.rowIndex="1" />
     <Label text="Contact" GridPane.columnIndex="0" GridPane.rowIndex="2" />
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <TextField fx:id="contact" GridPane.columnIndex="1" GridPane.rowIndex="2" />
     <Label text="Balance" GridPane.columnIndex="0" GridPane.rowIndex="3" />
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <TextField fx:id="balance" GridPane.columnIndex="1" GridPane.rowIndex="3" />
     <Label text="Date" GridPane.columnIndex="0" GridPane.rowIndex="4" />
-    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
-    <Button text="Register" GridPane.columnIndex="0" GridPane.rowIndex="5"></Button>
+    <DatePicker fx:id="datePicker" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button text="Register" onAction="#setRegButton" fx:id="regButton" GridPane.columnIndex="0" GridPane.rowIndex="5"></Button>
     <Button text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5"></Button>
    <columnConstraints>
       <ColumnConstraints />
