@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.databaseconnectionexample.RegistrationView"
-            prefHeight="400.0" prefWidth="600.0">
-    <Label text="Customer ID"></Label>
+<GridPane prefHeight="400.0" vgap="20" hgap="30" prefWidth="330.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.databaseconnectionexample.RegistrationView">
+    <Label text="Customer ID" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <Label text="Full name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1" />
+    <Label text="Contact" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="2" />
+    <Label text="Balance" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+    <TextField GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    <Label text="Date" GridPane.columnIndex="0" GridPane.rowIndex="4" />
+    <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
+    <Button text="Register" GridPane.columnIndex="0" GridPane.rowIndex="5"></Button>
+    <Button text="Cancel" GridPane.columnIndex="1" GridPane.rowIndex="5"></Button>
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+
+
+
+
 
 </GridPane>

@@ -10,6 +10,6 @@
     <Label text="Password"></Label>
     <PasswordField promptText="Enter your password"></PasswordField>
     <Button text="Login" prefWidth="150"></Button>
-    <Button text="Register" prefWidth="150"></Button>
+    <Button fx:id="register" onAction="#setRegister" text="Register" prefWidth="150"></Button>
 
 </FlowPane>
