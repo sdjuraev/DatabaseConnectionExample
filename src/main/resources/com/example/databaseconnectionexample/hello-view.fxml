@@ -6,10 +6,10 @@
 
 <FlowPane orientation="VERTICAL" vgap="25" alignment="CENTER" prefHeight="332.0" prefWidth="376.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.2-ea" fx:controller="com.example.databaseconnectionexample.HelloController">
     <Label text="Login"></Label>
-    <TextField promptText="Enter your login"></TextField>
+    <TextField fx:id="loginText" promptText="Enter your login"></TextField>
     <Label text="Password"></Label>
-    <PasswordField promptText="Enter your password"></PasswordField>
-    <Button text="Login" prefWidth="150"></Button>
+    <PasswordField fx:id="passwordText" promptText="Enter your password"></PasswordField>
+    <Button fx:id="LoginButton" text="Login" prefWidth="150" onAction="#checkUser"></Button>
     <Button fx:id="register" onAction="#setRegister" text="Register" prefWidth="150"></Button>
 
 </FlowPane>
